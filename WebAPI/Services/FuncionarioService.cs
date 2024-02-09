@@ -41,7 +41,7 @@ namespace WebAPI.Services
             return serviceResponse; // contém os dados da lista de funcionários (se houver) e quaisquer mensagens ou informações adicionais sobre o resultado da operação.
         }
 
-        public async Task<ServiceResponse<Funcionario>> GetFuncionarioByIdAsync(int id)
+        public async Task<ServiceResponse<Funcionario>> GetFuncionarioByIdAsync(Guid id)
         {
             ServiceResponse<Funcionario> serviceResponse = new ServiceResponse<Funcionario>();
 
@@ -134,7 +134,7 @@ namespace WebAPI.Services
             return serviceResponse;
         }
 
-        public async Task<ServiceResponse<Funcionario>> DeleteFuncionarioAsync (int id)
+        public async Task<ServiceResponse<Funcionario>> DeleteFuncionarioAsync (Guid id)
         {
             ServiceResponse<Funcionario> serviceResponse = new ServiceResponse<Funcionario>();
 
@@ -162,9 +162,9 @@ namespace WebAPI.Services
 
         }
 
-        public async Task<ServiceResponse<Funcionario>> InativaFuncionario(int id)
+        public async Task<ServiceResponse<List<Funcionario>>> InativaFuncionario(Guid id)
         {
-            ServiceResponse<Funcionario> serviceResponse = new ServiceResponse<Funcionario>();
+            ServiceResponse<List<Funcionario>> serviceResponse = new ServiceResponse<List<Funcionario>>();
 
             try
             {

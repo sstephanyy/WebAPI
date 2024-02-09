@@ -15,11 +15,10 @@ namespace WebAPI.Migrations
                 name: "Funcionarios",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Sobrenome = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Departamento = table.Column<int>(type: "int", nullable: false),
+                    Departamento = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Ativo = table.Column<bool>(type: "bit", nullable: false),
                     Turno = table.Column<int>(type: "int", nullable: false),
                     DataDeCriacao = table.Column<DateTime>(type: "datetime2", nullable: false),

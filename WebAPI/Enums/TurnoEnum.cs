@@ -2,7 +2,7 @@
 
 namespace WebAPI.Enums
 {
-    [JsonConverter(typeof(JsonConverter))]
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum TurnoEnum
     {
         Manha,

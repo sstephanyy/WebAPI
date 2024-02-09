@@ -6,7 +6,7 @@ namespace WebAPI.Models
     public class Funcionario
     {
         [Key]
-        public int Id { get; set; }
+        public Guid Id { get; private set; } = Guid.NewGuid();
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
         public DepartamentoEnum Departamento { get; set; }
