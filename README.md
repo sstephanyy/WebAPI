@@ -16,12 +16,3 @@ Este é um projeto de exemplo que demonstra um CRUD (Create, Read, Update, Delet
 - **Entity Framework Core**: Utilizado para mapear objetos para tabelas do banco de dados e realizar operações de banco de dados.
 - **SQL Server**: Banco de dados relacional utilizado para armazenar os dados dos funcionários.
 
-## Pré-requisitos
-
-Antes de executar a aplicação, é necessário ter o seguinte instalado:
-
-- Node.js
-- Angular CLI
-- .NET SDK
-- SQL Server (ou outro banco de dados suportado pelo Entity Framework Core)
-
