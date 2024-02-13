@@ -35,6 +35,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("funcionariosApp");
+
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
